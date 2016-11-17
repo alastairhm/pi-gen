@@ -99,7 +99,7 @@ run_stage(){
 			./prerun.sh
 			log "End ${STAGE_DIR}/prerun.sh"
 		fi
-		for SUB_STAGE_DIR in ${STAGE_DIR}/*; do
+		for SUB_STAGE_DIR in ${STAGE_DIR}/[0-2]; do
 			if [ -d ${SUB_STAGE_DIR} ] &&
 			   [ ! -f ${SUB_STAGE_DIR}/SKIP ]; then
 				run_sub_stage
@@ -165,7 +165,7 @@ dependencies_check ${BASE_DIR}/depends
 mkdir -p ${WORK_DIR}
 log "Begin ${BASE_DIR}"
 
-for STAGE_DIR in ${BASE_DIR}/stage*; do
+for STAGE_DIR in ${BASE_DIR}/stage[0-2]; do
 	run_stage
 done
 
