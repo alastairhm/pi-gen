@@ -1,5 +1,7 @@
 #TODO
 
+Lite Raspberry Pi image with Docker installed
+
 1. Documentation
 
 #Dependencies
