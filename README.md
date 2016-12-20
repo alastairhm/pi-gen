@@ -6,7 +6,7 @@ Lite Raspberry Pi image with Docker installed
 
 #Dependencies
 
-`quilt kpartx realpath qemu-user-static debootstrap zerofree pxz zip dosfstools`
+`quilt kpartx realpath qemu-user-static debootstrap zerofree pxz zip dosfstools bsdtar libcap2-bin`
 
 #Config
 
